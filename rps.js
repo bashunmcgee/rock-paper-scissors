@@ -22,7 +22,7 @@ function playRound(playerSelection) {
         (playerSelection == 'paper' && computerSelection == 'rock')) {
         
         playerScore += 1
-        result = ('You win! ' + playerSelection + ' beats ' + computerSelection
+        result += ('You win! ' + playerSelection + ' beats ' + computerSelection
             + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
 
         if (playerScore == 5) {
@@ -31,12 +31,12 @@ function playRound(playerSelection) {
         }
     }
     else if (playerSelection == computerSelection) {
-        result = ('It\'s a tie. You both chose ' + playerSelection
+        result += ('It\'s a tie. You both chose ' + playerSelection
             + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
     }
     else {
         computerScore += 1
-        result = ('You lose! ' + computerSelection + ' beats ' + playerSelection
+        result += ('You lose! ' + computerSelection + ' beats ' + playerSelection
             + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
 
         if (computerScore == 5) {
